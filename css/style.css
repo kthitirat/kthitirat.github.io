@@ -21,6 +21,17 @@ a:active {
 img {
 	border: none;
 }
+
+/* เพิ่มใหม่เอง */
+
+/* .bg-home {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+} */
+
+/* เพิ่มใหม่เอง */
 /*-------------------------------------------FONTS---------------------------------------------*/
 @font-face {
 	font-family: 'roboto-regular-webfont';
