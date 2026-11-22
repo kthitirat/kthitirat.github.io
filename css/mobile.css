@@ -152,15 +152,13 @@
 		padding: 0;
 		width: 100%;
 	}
-}
-@media only screen and (max-width : 568px) and (orientation : landscape) {
-	
-}
+	}
+	@media only screen and (max-width : 568px) and (orientation : landscape) {
+		
+	}
 	@media only screen and (max-width : 918px) {
-	#body{
-	}
-	#body.home {
-	}
+
+	
 	#body div.blog, #body div.singlepost {
 		margin: 0;
 		max-width: none;
@@ -363,4 +361,79 @@
 		padding: 0 0 35px;
 		width: 90%;
 	}
-}
+
+		#body.home div.footer div ul {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: flex-start;
+		gap: 50px;
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	#body.home div.footer div ul li {
+		float: none;
+		flex: 0 1 220px;
+		width: 220px;
+		max-width: 100%;
+		margin: 0;
+		text-align: center;
+		box-sizing: border-box;
+	}
+
+	#body.home div.footer div ul li h1 {
+		font-family: "Prompt", sans-serif;
+		font-size: 20px;
+		line-height: 24px;
+		min-height: 48px;
+		text-align: center;
+		text-transform: none;
+	}
+
+	/* แท็บเล็ต */
+	@media (max-width: 768px) {
+		#body.home div.footer div ul {
+			gap: 25px;
+			padding: 30px 15px;
+		}
+
+		#body.home div.footer div ul li {
+			flex-basis: 200px;
+			width: 200px;
+		}
+	}
+
+	/* โทรศัพท์มือถือ */
+	@media (max-width: 480px) {
+		#body.home div.footer div ul {
+			flex-direction: column;
+			align-items: center;
+			gap: 30px;
+			padding: 30px 10px;
+		}
+
+		#body.home div.footer div ul li {
+			flex: 0 1 auto;
+			width: 100%;
+			max-width: 220px;
+		}
+	}
+		}
+		#body div.footer div.about-content {
+			padding: 30px 18px 50px;
+		}
+
+		#body div.footer div.about-content h3 {
+			font-size: 20px;
+			line-height: 1.5;
+		}
+
+		#body div.footer div.about-content ul {
+			padding-left: 24px;
+		}
+
+		#body div.footer div.about-content li {
+			font-size: 16px;
+			line-height: 1.8;
+		}

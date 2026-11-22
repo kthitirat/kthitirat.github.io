@@ -1,4 +1,8 @@
 /* Website template by freewebsitetemplates.com */
+* {
+    font-family: "Montserrat", "Prompt", sans-serif !important;
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -298,17 +302,19 @@ img {
 	padding: 0;
 }
 #body.home div.footer div ul {
-	display: inline-block;
-	list-style: none outside none;
-	margin: 0;
-	padding: 36px 0 32px;
-	width: 100%;
+	display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    width: 100%;
+    padding: 36px 0 32px;
 }
 #body.home div.footer div ul li {
-	float: left;
-	margin: 0 10px;
-	padding: 0;
-	width: 220px;
+	float: none;
+    flex: 0 0 220px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 #body.home div.footer div ul li a {
 	background: url(../images/icons.png) no-repeat;
@@ -319,28 +325,42 @@ img {
 	width: 80px;
 }
 #body.home div.footer div ul li a.product {
-	background-position: 0 -372px;
+	background: url("../images/yogurt.jpg") no-repeat center;
+   	background-size: contain;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 22px;
+	/* background-position: 0 -372px; */
 }
 #body.home div.footer div ul li a.about {
-	background-position: 0 -418px;
+	background: url("../images/icon-2.png") no-repeat center;
+    background-size: contain;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 22px;
+	/* background-position: 0 -418px; */
 }
 #body.home div.footer div ul li a.flavor {
-	background-position: 0 -280px;
+	background: url("../images/icon-3.png") no-repeat center;
+    background-size: contain;
+    width: 150px;
+    height: 100px;
+    margin: 0 auto 22px;
+	/* background-position: 0 -280px; */
 }
 #body.home div.footer div ul li a.contact {
 	float: none;
 	background-position: 0 -326px;
 }
 #body.home div.footer div ul li h1 {
-	color: #ffffff;
-	font-family: lato-regular-webfont;
-	font-size: 20px;
-	font-weight: normal;
-	line-height: 20px;
-	margin: 0;
-	padding: 0;
-	text-align: center;
-	text-transform: uppercase;
+	min-height: 48px;
+    margin: 0;
+    padding: 0;
+    font-family: "Prompt", sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: none;
 }
 /*----------------------------------------body-styles---------------------------------------*/
 #body {
@@ -1084,4 +1104,59 @@ img {
 }
 #footer div .connect a.twitter {
 	background-position: 0 -96px;
+}
+
+/*----------------------------------------about-content-styles---------------------------------------*/
+#body div.footer div.about-content {
+	float: none;
+	width: 100%;
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 48px 32px 72px;
+	box-sizing: border-box;
+	font-family: "Prompt", sans-serif;
+}
+
+#body div.footer div.about-content > div {
+	width: 100%;
+	max-width: none;
+	margin: 0;
+	padding: 0;
+}
+
+#body div.footer div.about-content h3 {
+	margin: 0 0 18px;
+	padding: 14px 18px;
+	border-left: 5px solid #c8c10d;
+	border-radius: 6px;
+	background: #f5f3f3;
+	color: #7a6666;
+	font-family: "Prompt", sans-serif;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 1.5;
+}
+
+#body div.footer div.about-content ul {
+	width: 100%;
+	margin: 0 0 34px;
+	padding: 0 0 0 28px;
+	box-sizing: border-box;
+}
+
+#body div.footer div.about-content li {
+	float: none;
+	width: auto;
+	margin: 0 0 14px;
+	padding: 0;
+	color: #4f4f4f;
+	font-family: "Prompt", sans-serif;
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 1.9;
+}
+
+#body div.footer div.about-content li b {
+	color: #7a6666;
+	font-weight: 600;
 }
